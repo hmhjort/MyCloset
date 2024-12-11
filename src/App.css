@@ -1,0 +1,612 @@
+@media (max-width: 900px) {
+  #Closet {
+    background-color: rgb(249, 184, 236);
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 35% 35% 1fr;
+    grid-template-areas: 
+      ". Tops ."
+      "Accessories Bottoms Coats"
+      ". Shoes ."
+    ;
+  }
+
+  #Main {
+    min-height: 80vh;
+    width: 100vw;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 80% 1fr;
+  }
+
+  #Select-one {
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  #Checklist {
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 5px;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+
+  .category-section {
+    margin-bottom: 15px;
+  }
+  
+  .category-items {
+    padding-left: 5px;
+  }
+  
+  .item-row {
+    margin:5px 0;
+  }
+  
+  .item-row label {
+    display: flex; 
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .item-row input {
+    margin-right: 5px;
+  }
+
+  #Clothes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30px; 
+    border-bottom: 2px;
+    border-left: 1px;
+    border-right: 0px; 
+    border-top: 0px;
+    border-color:rgb(0, 0, 0);
+    border-style: solid;
+    padding: 2px;
+    background-color: rgb(242, 205, 228);
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  #Add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; 
+    height: 30px; 
+    border-width: 1px; 
+    border-color:rgb(0, 0, 0);
+    border-style: solid;
+    border-radius: 4%;
+    margin-left: 20%;
+    margin-bottom: 10%; 
+    padding: 2px;
+    background-color: rgb(245, 127, 210);;
+  }
+  
+  #Add-Item {
+    font-size: 10px;
+  }
+  
+  #Plus {
+    font-size: 15px;
+  }
+
+  #label-Tops {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+  #label-Accessories {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+  #label-Coats {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+  #label-Bottoms {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+  #label-Shoes {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+  #Sidebar {
+    background-color: rgb(255, 255, 255);
+    border-color: black;
+    border-left: 1px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-style: solid;
+    display: grid;
+    grid-template-rows: 40px 60vh 50px 1fr;
+    gap: 10px;
+  }
+
+  #Coats {
+    grid-area: Coats;
+  }
+  
+  #Accessories {
+    grid-area: Accessories;
+    margin-left: 10px;
+    padding-left: 10px;
+  }
+
+  #Tops, #Bottoms, #Coats, #Accessories, #Shoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    width: 50px; 
+    height: 50px;  
+  }
+  
+  #View-Account {
+    width: 60px; 
+    height: 30px; 
+    padding: 0px;
+    font-size: 15px;
+  }
+
+  #Image-Tops, #Image-Bottoms, #Image-Coats {
+    width: 75px;
+    height: 75px;
+  }
+  
+  #Image-Shoes, #Image-Accessories {
+    width: 50px;
+    height: 50px;
+  }
+
+  form {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: auto;
+    margin: auto;
+    gap: 1em;
+    padding: 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: hotpink;
+  }
+  
+  .Log-in {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+
+  .category-header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: rgb(242, 205, 228);
+    border-width: 1px; 
+    border-style: solid; 
+    border-color: #ccc;
+  }
+
+  #MyCloset {
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+  }
+
+  #AddItemForm {
+    position: fixed;
+    top: 20%;
+    left: 2%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border-color:rgb(245, 127, 210);
+    z-index: 1000;
+    width: 80%;
+    max-width: 300px;
+  }
+  
+  #Preview {
+    width: 15px;
+    height: 15px; 
+    object-fit: cover;
+  }
+  
+  .new-item {
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  #AccountForm {
+    position: fixed;
+    top: 30%;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 1000;
+    width: 80%;
+    max-width: 300px;
+  }
+  
+  .your-account {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 900px) {
+  #Select-one {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  #Main {
+    min-height: 80vh;
+    width: 100vw;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 80% 1fr;
+  }
+
+  #Closet {
+    background-color: rgb(249, 184, 236);
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 33% 33% 1fr;
+    grid-template-areas: 
+      ". Tops ."
+      "Accessories Bottoms Coats"
+      ". Shoes ."
+    ;
+  }
+
+  .category-section {
+    margin-bottom: 10px;
+  }
+  
+  .category-items {
+    padding-left: 10px;
+  }
+  
+  .item-row {
+    margin:5px 0;
+  }
+  
+  .item-row label {
+    display: flex; 
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .item-row input {
+    margin-right: 10px;
+  }
+
+  #Checklist {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+
+  #Add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px; 
+    height: 56px; 
+    border-width: 1px; 
+    border-color:rgb(0, 0, 0);
+    border-style: solid;
+    border-radius: 4%;
+    margin-left: 35%;
+    margin-bottom: 40%; 
+    padding: 2px;
+    background-color: rgb(245, 127, 210);;
+  }
+  
+  #Add-Item {
+    font-size: 14px;
+  }
+  
+  #Plus {
+    font-size: 20px;
+  }
+
+  #Clothes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 99%;
+    height: 40px; 
+    border-bottom: 2px;
+    border-left: 1px;
+    border-right: 0px; 
+    border-top: 0px;
+    border-color:rgb(0, 0, 0);
+    border-style: solid;
+    padding: 2px;
+    background-color: rgb(242, 205, 228);
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  #Sidebar {
+    background-color: rgb(255, 255, 255);
+    border-color: black;
+    border-left: 1px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-style: solid;
+    display: grid;
+    grid-template-rows: 50px 70vh 80px 1fr;
+    gap: 10px;
+  }
+
+  #Coats {
+    grid-area: Coats;
+    margin-right: 80%;
+  }
+  
+  #Accessories {
+    grid-area: Accessories;
+    margin-left: 80%;
+  }
+
+  #Tops, #Bottoms, #Coats, #Accessories, #Shoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: "50px"; 
+    height: "50px";  
+  }
+
+  #Image-Tops, #Image-Bottoms, #Image-Coats {
+    width: 150px;
+    height: 150px;
+    border-style: solid;
+    border-color: rgb(245, 127, 210);
+  }
+  
+  #Image-Shoes, #Image-Accessories {
+    width: 100px;
+    height: 100px;
+    border-style: solid;
+    border-color: rgb(245, 127, 210);
+  }
+
+  #AddItemForm {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  #Preview {
+    width: 100px;
+    height: 100px; 
+    object-fit: cover;
+  }
+  
+  .new-item {
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  #label-Tops, #label-Bottoms, #label-Accessories, #label-Coats, #label-Shoes{
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  #View-Account {
+    width: 120px; 
+    height: 50px; 
+    padding: 2px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: "pointer";
+  }
+
+  form {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: auto;
+    margin: 50px;
+    gap: 1em;
+    padding: 30px;
+    border-style: solid;
+    border-width: 1px;
+  }
+  
+  .Log-in {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  
+  #log-in-button, #sign-up-button {
+    background-color: rgb(230, 227, 227);
+  }
+
+  .category-header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(242, 205, 228);
+    border-width: 1px; 
+    border-style: solid; 
+    border-color: #ccc;
+  }
+
+  #MyCloset {
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+  }
+
+  #AccountForm {
+    position: fixed;
+    top: 30%;
+    left: 30%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  .your-account {
+    font-size: 25px;
+    font-weight: 600;
+  }
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+.App-header {
+  border-width: .5px; 
+  border-color:rgb(0, 0, 0);
+  border-style: solid;
+  display: grid;
+  grid-template-columns: 20% 1fr 20%;
+  align-items: center;
+  background-color: rgb(245, 127, 210);
+}
+
+#Account {
+  margin-top: 2%;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: "pointer";
+}
+
+#View-Account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: none;
+  background-color: rgb(245, 127, 210);
+  cursor: "pointer";
+}
+
+#Tops {
+  grid-area: Tops; 
+}
+
+#Bottoms {
+  grid-area: Bottoms;  
+}
+
+#Shoes {
+  grid-area: Shoes;
+}
+
+#Item-Label {
+  display: "flex"; 
+  align-items: "center ";
+}
+
+#No-items {
+  font-style: italic; 
+  color: #777;
+}
+
+#log-in-page, #sign-up-page {
+  background-color: rgb(249, 184, 236);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  margin: 0px;
+}
+
+#my-closet-title {
+  font-size: 50px;
+  font-weight: 600;
+  margin:20px;
+}
+
+#log-in-button, #sign-up-button {
+  background-color: rgb(249, 184, 236);
+}
+
+#Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+
+#span {
+  cursor: "pointer";
+}
